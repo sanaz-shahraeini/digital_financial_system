@@ -1,12 +1,11 @@
+import { UserButton } from "@clerk/nextjs";
 
-
-
-const page = () => {
+const Home = () => {
   return (
     <div>
-      This is autherized page
+      <UserButton afterSignOutUrl="/" />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default Home;
